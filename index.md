@@ -6,6 +6,11 @@ Click here:
 https://pyscript.net/examples/panel_stream.html
 
 
+```python
+# this is tom
+print('hi')
+```
+
 
 #### What is Pyscript ? 
 
