@@ -1,0 +1,83 @@
+
+
+
+this is hosted online so youc an go here instead and just execute:  https://pyscript.net/examples/
+
+
+issues:    https://community.anaconda.cloud/c/tech-topics/pyscript/41
+
+
+the js:    https://pyscript.net/alpha/pyscript.js
+
+
+
+
+
+
+this works:
+
+<html>
+    <head>
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+      <py-env>
+        - numpy
+        - matplotlib
+      </py-env>
+    </head>
+
+  <body>
+    <h1>Plotting a histogram of Standard Normal distribution</h1>
+    <div id="plot"></div>
+
+    <py-script output="plot">
+import matplotlib.pyplot as plt
+import numpy as np
+
+np.random.seed(42)
+
+rv = np.random.standard_normal(1000)
+
+fig, ax = plt.subplots()
+ax.hist(rv, bins=30)
+fig
+
+    </py-script>
+  </body>
+</html>
+
+
+
+
+
+this works:
+
+<html>
+    <head>
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+      <py-env>
+        - numpy
+        - matplotlib
+      </py-env>
+    </head>
+
+  <body>
+    <h1>Trying a random example</h1>
+    <div id="plot"></div>
+
+    <py-script output="plot">
+import random
+num = random.randint(1,100)
+print(f"The number is {num}")
+for i in range(1,11):
+    print(f"{i} * {num} = {i*num}")
+    </py-script>
+  </body>
+</html>
+
+
+
+
+
+
