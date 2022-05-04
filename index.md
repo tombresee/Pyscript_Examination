@@ -17,6 +17,14 @@ Go [here](https://github.com/pyodide/pyodide/tree/main/packages) - if you see it
 
 
 
+#### How do you do things today ? 
+
+I do this
+I do that
+
+
+
+
 <br>
 <br>
 <br>
