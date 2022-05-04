@@ -1,6 +1,11 @@
 ## Pyscript
 
 
+Click here: 
+
+https://pyscript.net/examples/panel_stream.html
+
+
 
 #### What is Pyscript ? 
 
