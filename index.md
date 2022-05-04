@@ -1,5 +1,7 @@
 ## Pyscript
 
+https://www.anaconda.com/blog/pyscript-python-in-the-browser
+
 <https://tombresee.github.io/NFL/tau.html>
 
 <https://tombresee.github.io/NFL/pi.html>
