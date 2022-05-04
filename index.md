@@ -1,7 +1,3 @@
----
-title: NFL-Eval
----
-
 ## What is NFL-Eval?
 
 __SemEval__ is a series of international natural language processing (NLP) research workshops whose mission is to advance the current state of the art in semantic analysis and to help create high-quality annotated datasets in a range of increasingly challenging problems in natural language semantics. 
