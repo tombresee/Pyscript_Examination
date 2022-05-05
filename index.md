@@ -45,7 +45,9 @@ The new PyScript project lets you embed Python programs **directly** in HTML pag
 
 If you make the [list](https://github.com/pyodide/pyodide/tree/main/packages), you are supported. 
 
-All those hours you spent learning numpy, pandas, matplotlib, seaborn, altair, and even bokeh are about to pay off...
+All those hours you spent learning numpy, pandas, matplotlib, seaborn, altair, bokeh, scipy, **networkx**, etc are about to pay off...Even the mighty **scikit-learn is supported**. 
+
+
 
 
 <br>
