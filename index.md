@@ -44,7 +44,7 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 
 **The Process:**
 
-1. Add the exact css stylesheet below
+1. Add the exact css stylesheet href link below
 2. Add the exact script .js reference below 
 3. Just write your code as if you were in any other IDE...
 
@@ -56,7 +56,7 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 <html>
   <head>
 
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
   
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
   
