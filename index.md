@@ -1,18 +1,14 @@
-## Pyscript
 
 
+<br>
 
-Click here: 
-
+I want you to start by clicking this link:
 https://pyscript.net/examples/panel_stream.html
 
 
-```python
-# this is tom
-print('hi')
-```
-
 <br>
+
+
 
 #### What is Pyscript ? 
 
@@ -38,26 +34,6 @@ I do that
 
 
 
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
