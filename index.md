@@ -10,9 +10,7 @@ What do you think of it ?
 It was built in a very unusual manner...
 
 
-
-
-
+<p align="center"><img src='https://github.com/pyscript/pyscript/blob/main/pyscriptjs/examples/logo.png' alt='py'></p>
 
 
 
@@ -27,10 +25,6 @@ abc
 * <https://github.com/pyscript>
 * <https://github.com/pyscript/pyscript/blob/main/GETTING-STARTED.md>
 * [Original Anaconda Blog](https://www.anaconda.com/blog/pyscript-python-in-the-browser)
-
-
-
-
 
 
 
@@ -97,8 +91,6 @@ print('If you see this output, it means you did everything right...')
 </body>
 </html>
 ```
-
-
 
 
 
