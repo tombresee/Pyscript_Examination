@@ -1,6 +1,7 @@
 ## Pyscript
 
 
+
 Click here: 
 
 https://pyscript.net/examples/panel_stream.html
@@ -11,6 +12,7 @@ https://pyscript.net/examples/panel_stream.html
 print('hi')
 ```
 
+<br>
 
 #### What is Pyscript ? 
 
@@ -19,6 +21,7 @@ Go [here](https://www.anaconda.com/blog/pyscript-python-in-the-browser) - if you
 
 
 
+<br>
 
 #### How do I know if my python library is supported ? 
 
@@ -26,6 +29,7 @@ Go [here](https://github.com/pyodide/pyodide/tree/main/packages) - if you see it
 
 
 
+<br>
 
 #### How do you do things today ? 
 

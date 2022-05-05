@@ -2,16 +2,5 @@
 ---
 
 @import "{{ site.theme }}";
-
-header {
-  display: none;
-}
-
-footer {
-  display: none !important;
-}
-
-.btn {
-  display: none !important;
-}
-
+.inner{ max-width:800px }
+ul { margin-bottom:0 }
