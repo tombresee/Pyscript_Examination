@@ -1,6 +1,13 @@
 
 
-I want you to start by clicking this [link](https://pyscript.net/examples/panel_stream.html).  Wait a few seconds.  What do you think of it ? 
+I want you to start by clicking this [link](https://pyscript.net/examples/panel_stream.html).  
+
+Wait a few seconds.  
+
+What do you think of it ? 
+
+It was built in a very unusual manner...
+
 
 
 <br>
