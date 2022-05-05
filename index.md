@@ -130,7 +130,7 @@ Plotting charts is going to be a big thing to leverage, let's show how to do it.
       <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
       <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 
-      <py-env>    <!-- I'm using these py libraries -->
+      <py-env>  
         - numpy   
         - matplotlib
       </py-env>
@@ -167,10 +167,7 @@ fig
 </html>
 ```
 
-
-
-The py-env tag is used to define our Python environment. Example of loading python packages into our environment:
-
+<p> The py-env tag is used to define our Python environment. Example of loading python packages into our environment: </p>
 
 ```
 <py-env> 
@@ -182,8 +179,9 @@ The py-env tag is used to define our Python environment. Example of loading pyth
 ```
 
 
-Don't want to write all your python code directly into the html file ? 
-It's fine, just reference it: 
+
+<p>Don't want to write all your python code directly into the html file ? 
+It's fine, just reference it:</p>
 
 ```<py-script> src="/toms_python_file.py"> </py-script>```
 
