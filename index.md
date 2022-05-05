@@ -143,7 +143,7 @@ Plotting charts is going to be a big thing to leverage, let's show how to do it.
 
     <div id="plot"></div>
     
-    <!-- This script does abcxyz -->
+    <!-- Write your comments here -->
     <py-script output="plot">   
 
 # importing my libraries 
