@@ -1,6 +1,6 @@
 
 
-I want you to start by clicking this [link](https://pyscript.net/examples/panel_stream.html).  
+I want you to start by clicking [this link](https://pyscript.net/examples/panel_stream.html).  
 
 Wait a few seconds.  
 
@@ -31,11 +31,11 @@ Ok, it's very simple.
 
 `<p>This is normal text - <b>and this is bold text</b>.</p>`
 
-HTML tags.  Yes, we are going way back.  Like the [simple stuff](https://www.w3schools.com/tags/tag_comment.asp)
+HTML tags.  Yes, we are going way back.  Like the [simple stuff](https://www.w3schools.com/tags/tag_comment.asp). 
 
 An HTML tag is a piece of markup language used to indicate the beginning and end of an HTML element in an HTML document.  Yes, got it.  
 
-The new PyScript project lets you embed Python programs **directly** in HTML pages and execute them within the browser without any server-based requirements. 
+<ul>The new PyScript project lets you embed Python programs **directly** in HTML pages and execute them within the browser without any server-based requirements.</ul>
 
 
 
