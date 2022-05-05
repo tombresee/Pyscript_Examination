@@ -44,8 +44,8 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 
 **The Process:**
 
-1. Add the stylesheet
-2. Add the script .js reference
+1. Add the exact css stylesheet below
+2. Add the exact script .js reference below 
 3. Just write your code as if you were in any other IDE...
 
 
@@ -64,14 +64,16 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
   <body> 
   
   <py-script> 
-print('Tom is coolj') 
+# Tom is inserting his standard python code within these
+# <py-script> html TAGs: 
+print('Tom is cool.') 
+print('If you see this output, it means you did everything right...')
+# Tom is done pasting in his python code...
    </py-script> 
 
 </body>
 </html>
 ```
-
-
 
 
 
