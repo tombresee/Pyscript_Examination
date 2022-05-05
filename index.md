@@ -22,6 +22,7 @@ abc
 * [Original Anaconda Blog](https://www.anaconda.com/blog/pyscript-python-in-the-browser)
 
 
+<br>
 
 
 ### 2. &ensp;  Cut to the chase and get to it...
@@ -50,23 +51,8 @@ All those hours you spent learning numpy, pandas, matplotlib, seaborn, altair, b
 
 
 
-<br>
 
 
-
-
-#### How do I know if my python library is supported ? 
-
-Go [here](https://github.com/pyodide/pyodide/tree/main/packages) - if you see it on that page, its supported...
-
-
-
-<br>
-
-#### How do you do things today ? 
-
-I do this
-I do that
 
 
 
