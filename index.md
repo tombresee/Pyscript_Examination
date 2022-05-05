@@ -1,5 +1,7 @@
 
 
+https://github.com/pyscript/pyscript/blob/main/GETTING-STARTED.md
+
 
 I want you to start by clicking [this link](https://pyscript.net/examples/panel_stream.html).  
 
@@ -50,9 +52,8 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 
 
 **Your new HTML tag building blocks:**
-- `<py-script>` - indicates to HTML to to execute the python commands 
-- `<py-env>` - indicates to HTML what your python library dependencies are (if you don't need any python libraries, it's blank)
-
+- `<py-script>` - indicates to HTML to to execute the python code  
+- `<py-env>` - indicates to HTML what your python library dependencies are (if you don't need any python libraries, it's blank). This component defines the Python packages needed to run your Python code... 
 
 
 <br>
@@ -161,17 +162,23 @@ fig
 
 
 
+The py-env tag is used to define our Python environment. Example of loading python packages into our environment:
 
 
+```
+<py-env> 
+  - numpy   
+  - pandas 
+  - matplotlib
+  - scikit-learn
+ </py-env>
+```
 
 
+Don't want to write all your python code directly into the html file ? 
+It's fine, just reference it: 
 
-
-
-
-
-
-
+```<py-script> src="/toms_python_file.py"> </py-script>```
 
 
 
