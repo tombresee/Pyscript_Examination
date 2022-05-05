@@ -1,9 +1,8 @@
 
 
-<br>
+I want you to start by clicking this [link](https://pyscript.net/examples/panel_stream.html)
 
-I want you to start by clicking this link:
-https://pyscript.net/examples/panel_stream.html
+What do you think of it ? 
 
 
 <br>
