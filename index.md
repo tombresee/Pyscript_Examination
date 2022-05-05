@@ -42,6 +42,15 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 
 <br>
 
+
+**Your HTML building blocks:**
+- <code><py-script> your code </py-script></code>:  tells HTML to execute the python commands 
+- <code><py-script></py-script></code>
+
+<br>
+
+
+
 **The Process:**
 
 1. Add the exact css stylesheet href link below
@@ -79,12 +88,8 @@ print('If you see this output, it means you did everything right...')
 
 <br>
 
+
 ### 3. &ensp;  Just show me what you are talking about ...
-
-
-
-
-
 
 
 
@@ -94,7 +99,7 @@ print('If you see this output, it means you did everything right...')
 
 <br>
 
-### 4. &ensp;  How do I know if my particular python library is supported ???
+### 5. &ensp;  How do I know if my particular python library is supported ???
 
 If you make the [list](https://github.com/pyodide/pyodide/tree/main/packages), you are supported. 
 
