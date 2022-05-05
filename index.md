@@ -139,7 +139,7 @@ Plotting charts is going to be a big thing to leverage, let's show how to do it.
 
   <body>
     
-    <p>Let's plot random numbers </p>
+    <p> Plotting random numbers </p>
 
     <div id="plot"></div>
     
