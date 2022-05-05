@@ -1,5 +1,6 @@
 
 
+
 I want you to start by clicking [this link](https://pyscript.net/examples/panel_stream.html).  
 
 Wait a few seconds.  
@@ -7,6 +8,11 @@ Wait a few seconds.
 What do you think of it ? 
 
 It was built in a very unusual manner...
+
+
+
+
+
 
 
 
@@ -21,6 +27,14 @@ abc
 * <https://github.com/pyscript>
 * <https://github.com/pyscript/pyscript/blob/main/GETTING-STARTED.md>
 * [Original Anaconda Blog](https://www.anaconda.com/blog/pyscript-python-in-the-browser)
+
+
+
+
+
+
+
+
 
 
 
@@ -45,6 +59,7 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 
 **Your HTML building blocks:**
 - `<py-script>` - indicated to HTML to to execute the python commands 
+
 
 <br>
 
@@ -71,11 +86,12 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
   <body> 
   
   <py-script> 
-# Tom is inserting his standard python code within 
-# these new <py-script> html TAGs: 
+
+# Tom is inserting his standard python code within these new <py-script> html TAGs: 
 print('Tom is cool.') 
 print('If you see this output, it means you did everything right...')
 # Tom is done pasting in his python code...
+
    </py-script> 
 
 </body>
@@ -84,10 +100,29 @@ print('If you see this output, it means you did everything right...')
 
 
 
+
+
+
+
+
+
+
+
+
 <br>
 
+### 3. &ensp; 
 
-### 3. &ensp;  Just show me what you are talking about ...
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -102,7 +137,6 @@ print('If you see this output, it means you did everything right...')
 If you make the [list](https://github.com/pyodide/pyodide/tree/main/packages), you are supported. 
 
 All those hours you spent learning numpy, pandas, matplotlib, seaborn, altair, bokeh, scipy, **networkx**, etc are about to pay off...Even the mighty **scikit-learn is supported**. 
-
 
 
 
