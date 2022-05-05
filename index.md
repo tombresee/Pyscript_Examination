@@ -44,18 +44,16 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 
 
 **Your HTML building blocks:**
-- <code><py-script> your code </py-script></code>:  tells HTML to execute the python commands 
-- <code><py-script></py-script></code>
+- `<py-script>` - indicated to HTML to to execute the python commands 
 
 <br>
-
 
 
 **The Process:**
 
 1. Add the exact css stylesheet href link below
 2. Add the exact script .js reference below 
-3. Just write your code as if you were in any other IDE...
+3. Just write your code as if you were in any other IDE, making sure it is between the `<py-script>` tags...
 
 
 <br>
