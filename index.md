@@ -10,7 +10,7 @@ What do you think of it ?
 It was built in a very unusual manner...
 
 
-<p align="center"><img src='https://github.com/pyscript/pyscript/blob/main/pyscriptjs/examples/logo.png' alt='py'></p>
+<p align="center"><img src='https://raw.githubusercontent.com/pyscript/pyscript/main/pyscriptjs/examples/logo.png' alt='py'></p>
 
 
 
