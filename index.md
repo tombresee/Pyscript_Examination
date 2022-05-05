@@ -85,21 +85,18 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
   </head>
   <body> 
   
-  <py-script> 
+  <py-script>  
 
 # Tom is inserting his standard python code within these new <py-script> html TAGs: 
 print('Tom is cool.') 
 print('If you see this output, it means you did everything right...')
 # Tom is done pasting in his python code...
-
+ 
    </py-script> 
 
 </body>
 </html>
 ```
-
-
-
 
 
 
