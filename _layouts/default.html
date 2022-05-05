@@ -1,0 +1,32 @@
+<!-- holy moly this took forever to figure out -->
+<!-- i just wanted to get rid of the default blue button, 
+  the 'View on Github' button ! -->
+
+<!-- THIS HELPED ME: 
+  https://ehmatthes.github.io/GitHub-Pages-Non-Rubyists/ --> 
+
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+{% seo %}
+<!-- "The plugin is designed to work out-of-the-box with minimal configuration. It’ll set your page title, description, Canonical URL, next and previous pages for paginated pages, JSON-LD structured data to help with indexing, Open Graph data for social networks, and Twitter summary card." -->
+  </head>
+  <body>
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+        </header>
+    </div>
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        {{ content }}
+      </section>
+    </div>
+  </body>
+</html>
