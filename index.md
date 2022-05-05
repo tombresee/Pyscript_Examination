@@ -35,7 +35,7 @@ HTML tags.  Yes, we are going way back.  Like the [simple stuff](https://www.w3s
 
 An HTML tag is a piece of markup language used to indicate the beginning and end of an HTML element in an HTML document.  Yes, got it.  
 
-<ul>The new PyScript project lets you embed Python programs **directly** in HTML pages and execute them within the browser without any server-based requirements.</ul>
+> <u>The new PyScript project lets you embed Python programs **directly** in HTML pages and execute them within the browser without any server-based requirements.</u>
 
 
 
