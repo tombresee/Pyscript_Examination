@@ -18,7 +18,9 @@ It was built in a very unusual manner...
 
 ### 1. &ensp; What is Pyscript ? 
 
-abc
+
+PyScript does **not** require any development environment other than a web browser (be safe and use Chrome)
+
 
 * <https://pyscript.net/>
 * <https://github.com/pyscript>
@@ -47,18 +49,26 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 <br>
 
 
-**Your HTML building blocks:**
-- `<py-script>` - indicated to HTML to to execute the python commands 
+**Your new HTML tag building blocks:**
+- `<py-script>` - indicates to HTML to to execute the python commands 
+- `<py-env>` - indicates to HTML what your python library dependencies are (if you don't need any python libraries, it's blank)
+
 
 
 <br>
 
 
+
 **The Process:**
 
-1. Add the exact css stylesheet href link below
-2. Add the exact script .js reference below 
-3. Just write your code as if you were in any other IDE, making sure it is between the `<py-script>` tags...
+1. Import the appropriate pyscript files to your html page with: 
+  - `<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />`
+  - `<script defer src="https://pyscript.net/alpha/pyscript.js"></script>`
+   Now you can use PyScript components in your html page
+
+2. Just write your code as if you were in any other IDE, making sure it is between the `<py-script>` tags.  These tags defined the python code that is executable within the web page. 
+
+
 
 
 <br>
@@ -90,13 +100,66 @@ print('If you see this output, it means you did everything right...')
 
 
 
+You see how I left-aligned all the python code ?  It's the safe way of making sure it all works correctly...
+
 
 
 
 
 <br>
 
-### 3. &ensp; 
+### 3. &ensp; A More Complicated Example
+
+
+Plotting charts is going to be a big thing to leverage, let's show how to do it... 
+
+<br>
+
+
+```python
+<html>
+    <head>
+      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+      <py-env>    <!-- I'm using these py libraries -->
+        - numpy   
+        - matplotlib
+      </py-env>
+    
+    </head>
+
+  <body>
+    
+    <p>Let's plot random numbers </p>
+
+    <div id="plot"></div>
+    
+    <!-- This script does abcxyz -->
+    <py-script output="plot">   
+
+# importing my libraries 
+import matplotlib.pyplot as plt
+import numpy as np
+
+# defining some random variables 
+x = np.random.randn(1000)
+y = np.random.randn(1000)
+
+fig, ax = plt.subplots()
+
+ax.scatter(x, y)
+
+fig
+
+    </py-script>
+
+
+  </body>
+</html>
+```
+
+
 
 
 
@@ -122,6 +185,8 @@ print('If you see this output, it means you did everything right...')
 If you make the [list](https://github.com/pyodide/pyodide/tree/main/packages), you are supported. 
 
 All those hours you spent learning numpy, pandas, matplotlib, seaborn, altair, bokeh, scipy, **networkx**, etc are about to pay off...Even the mighty **scikit-learn is supported**. 
+
+The link is technically the folder that contains the list of packages built in **pyodide**. 
 
 
 
