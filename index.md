@@ -14,7 +14,6 @@ It was built in a very unusual manner...
 
 
 
-
 <br>
 
 ### 1. &ensp; What is Pyscript ? 
@@ -25,7 +24,6 @@ abc
 * <https://github.com/pyscript>
 * <https://github.com/pyscript/pyscript/blob/main/GETTING-STARTED.md>
 * [Original Anaconda Blog](https://www.anaconda.com/blog/pyscript-python-in-the-browser)
-
 
 
 
