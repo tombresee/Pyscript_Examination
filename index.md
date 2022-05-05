@@ -14,7 +14,7 @@ It was built in a very unusual manner...
 
 
 
-#### What is Pyscript ? 
+### 1. &ensp; What is Pyscript ? 
 
 Go [here](https://www.anaconda.com/blog/pyscript-python-in-the-browser) - if you see it on that page, its supported...
 
