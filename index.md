@@ -1,14 +1,31 @@
+I want you to start by clicking [this link](https://pyscript.net/examples/panel_stream.html).  
 
+Wait a few seconds.  
+
+What do you think of it ? 
+
+It was built in a very unusual manner...
 
 https://github.com/pyscript/pyscript/blob/main/GETTING-STARTED.md
 
+```
 <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+```
+
 
 https://engrmuhammadusman108.medium.com/pyscript-way-to-run-python-in-web-ffa320c29cc0
 
 
+#### <font color='#00274C'> Author:  Tom Bresee </font>
+#### Category:  Examining something new to the industry
 
+
+<br>
+<br>
+
+
+### <font color='#00274C'>Background</font>
 
 I want you to start by clicking [this link](https://pyscript.net/examples/panel_stream.html).  
 
@@ -18,17 +35,17 @@ What do you think of it ?
 
 It was built in a very unusual manner...
 
-
-<p align="center"><img src='https://raw.githubusercontent.com/pyscript/pyscript/main/pyscriptjs/examples/logo.png' alt='py.png' width="200"></p>
+<p align="center"><img src='https://raw.githubusercontent.com/pyscript/pyscript/main/pyscriptjs/examples/logo.png' alt='py.png' width="100"></p>
 
 
 <br>
+<br>
 
-## 1. &ensp; What is Pyscript ? 
 
+
+### <font color='#00274C'>What is Pyscript ?</font>
 
 PyScript does **not** require any development environment other than a web browser (be safe and use Chrome). It allows writing webesites in python.  
-
 
 * <https://pyscript.net/>
 * <https://github.com/pyscript>
@@ -37,11 +54,13 @@ PyScript does **not** require any development environment other than a web brows
 
 
 
-
-
+<br>
 <br>
 
-## 2. &ensp;  Cut to the chase and get to it...
+
+
+### <font color='#00274C'>Cut to the chase and get to it...</font>
+
 
 Ok, it's very simple. 
 
@@ -66,9 +85,6 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 | `<py-env>` | Indicates to HTML what your python library dependencies are (if you don't need any python libraries, it's blank). This component defines the Python packages needed to run your Python code...  |
 
 
-
-
-
 <br>
 
 
@@ -81,8 +97,6 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
    Now you can use PyScript components in your html page
 
 2. Just write your code as if you were in any other IDE, making sure it is between the `<py-script>` tags.  These tags defined the python code that is executable within the web page. 
-
-
 
 
 <br>
@@ -113,7 +127,6 @@ print('If you see this output, it means you did everything right...')
 ```
 
 
-
 You see how I left-aligned all the python code ?  It's the safe way of making sure it all works correctly...
 
 
@@ -121,8 +134,15 @@ You see how I left-aligned all the python code ?  It's the safe way of making su
 
 
 <br>
+<br>
 
-## 3. &ensp; A More Complicated Example
+
+
+### <font color='#00274C'>A more complicated example</font>
+
+
+Ok, it's very simple. 
+
 
 
 Plotting charts is going to be a big thing to leverage, let's show how to do it... 
@@ -185,8 +205,6 @@ fig
  </py-env>
 ```
 
-
-
 <p>Don't want to write all your python code directly into the html file ? 
 It's fine, just reference it:</p>
 
@@ -198,8 +216,9 @@ It's fine, just reference it:</p>
 
 
 <br>
+<br>
 
-## 5. &ensp;  How do I know if my particular python library is supported ???
+### <font color='#00274C'>How do I know if my particular python library is supported ???</font>
 
 If you make the [list](https://github.com/pyodide/pyodide/tree/main/packages), you are supported. 
 
@@ -212,4 +231,17 @@ The link is technically the folder that contains the list of packages built in *
 
 <br>
 <br>
+
+### <font color='#00274C'>Enhanced Visualization Expectations:</font>
+ Final presentation will include a fully interactive view of all NFL players by weight, height, offense/defense, college attended, BMI, football position, including deeper views of the players via html link to their official NFL profile. This visualization will also allow a deeper view into player positional coordinates. 
+   - Position coordinates is a relatively new technology, and an exciting element to analyze
+   - Examples:  [Viz1](https://raw.githubusercontent.com/tombresee/NFL-Big-Data-Bowl-2021/main/ENTER/images/tampa_bay_passes_all_season.svg), [Viz2](https://raw.githubusercontent.com/tombresee/NFL-Big-Data-Bowl-2021/main/ENTER/images/avg_passing_yds_per_game_by_team.svg), [Viz3](https://raw.githubusercontent.com/tombresee/NFL-Big-Data-Bowl-2021/main/ENTER/images/player_weight_distribution.svg), [Viz4](https://raw.githubusercontent.com/tombresee/NFL-Big-Data-Bowl-2021/main/ENTER/images/orangeonblue2_b.svg), [Viz5](https://raw.githubusercontent.com/tombresee/NFL-Big-Data-Bowl-2021/main/ENTER/images/spheroid_prolate.svg), [Viz6](https://raw.githubusercontent.com/tombresee/NFL-Big-Data-Bowl-2021/main/ENTER/images/frontend.png)
+
+
+
 <br>
+<br>
+
+#### <font color='#00274C'>CONTACT</font>
+General questions should be directed to Tom Bresee at <tbresee@umich.edu>.
+
