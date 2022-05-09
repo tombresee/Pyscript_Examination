@@ -77,8 +77,6 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 2. Just write your code as if you were in any other IDE, making sure it is between the `<py-script>` tags.  These tags defined the python code that is executable within the web page. 
 
 
-<br>
-
 
 ```
 <html>
@@ -113,12 +111,10 @@ print("\nToday's current date:", today)
 
 <br>
 
-Here is what the output will look like:
+Here is what the HTML output will look like:
 <p align="center"><img src='https://raw.githubusercontent.com/tombresee/Pyscript_Examination/main/examples/time.png' alt='py.png' width="600"></p>
 
-<br>
-
-as hosted as an example [here](https://www.tombresee.com/Pyscript_Examination/examples/time)
+as hosted as an example at this live [website](https://www.tombresee.com/Pyscript_Examination/examples/time)
 
 <br>
 
