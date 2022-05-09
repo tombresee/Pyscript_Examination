@@ -5,32 +5,26 @@
 
 code {
     color: #252525;
-    font-size: 11px;
+    font-size: 10px;
     padding: 1px 7px;
     border-radius: 6px;
-    background-color: #ff8c00aa;
-    font-weight: bold;
     display: inline-block;
     margin: 1px;
 }
 
 
 a {
-    color: orange;
+    color: blue;
 }
 
 
-h4 {
-    font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+body {
+font-size: 25px;
 }
 
 
-.page-header {background: #191c20;}
-.inner{ max-width:850px;}
-.body {font-size: 25px;}
-.markdown-body {font-family: 'Times New Roman', Times, serif;}
-.ul { margin-bottom:0 }
-.btn {display: none !important;}
+ul { margin-bottom:0 }
+
+btn {display: none !important;}
 
 
