@@ -87,15 +87,16 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 <html>
   <head>
   
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> <--- insert these two
-    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> <--- insert this 
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>     <--- insert this
   
   </head>
 
   <body>
     <p><br>Welcome. This is a simple pyscript example. We will print out some time values.<br><br></p>
 
-    <py-script>   <--- write your python code here ! 
+    <py-script>      <--- write your python starting here ! 
+
 from datetime import date, datetime
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
@@ -103,7 +104,8 @@ print("\nThe current time:", current_time)
 
 today = date.today()
 print("\nToday's current date:", today)
-    </py-script>
+    
+    </py-script>     <--- python code done...
   
   </body>
 </html>
