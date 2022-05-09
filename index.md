@@ -32,7 +32,7 @@ It was built in a very unusual manner...
 
 ### <font color='#00274C'>What is Pyscript ?</font>
 
-PyScript does **not** require any development environment other than a web browser (be safe and use Chrome). It allows writing webesites in python.  
+PyScript does **not** require any development environment other than a web browser (be safe and use Chrome). It allows writing websites in python.  
 
 * <https://pyscript.net/>
 * <https://github.com/pyscript>
@@ -41,6 +41,20 @@ PyScript does **not** require any development environment other than a web brows
 
 <br>
 <br>
+
+| No | Title               | Type                       |
+|----|---------------------|----------------------------|
+| 1  | month               | Datetime (Month) "YYYY-MM" |
+| 2  | town                | Text (General)             |
+| 3  | flat_type           | Text (General)             |
+| 4  | block               | Text (General)             |
+| 5  | street_name         | Text (General)             |
+| 6  | storey_range        | Text (General)             |
+| 7  | floor_area_sqm      | Numeric (General)          |
+| 8  | flat_model          | Text (General)             |
+| 9  | lease_commence_date | Datetime (Year) "YYYY-MM"  |
+| 10 | remaining_lease     | Text (General)             |
+| 11 | resale_price        | Numeric (General)          |
 
 
 
