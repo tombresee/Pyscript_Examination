@@ -28,7 +28,7 @@ It was built in a very unusual manner...
 ### 1. &ensp; What is Pyscript ? 
 
 
-PyScript does **not** require any development environment other than a web browser (be safe and use Chrome)
+PyScript does **not** require any development environment other than a web browser (be safe and use Chrome). It allows writing webesites in python.  
 
 
 * <https://pyscript.net/>
