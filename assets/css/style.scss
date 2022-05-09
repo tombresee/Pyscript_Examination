@@ -2,12 +2,10 @@
 ---
 
 @import "{{ site.theme }}";
-.page-header {
-    background: #191c20;
-}
+.page-header {background: #191c20;}
 .inner{ max-width:850px;}
 .body {font-size: 25px;}
-.markdown-body {font-size: 25px;}
+.markdown-body {font-family: 'Times New Roman', Times, serif;}
 .ul { margin-bottom:0 }
 .btn {display: none !important;}
 
