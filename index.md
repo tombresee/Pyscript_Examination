@@ -1,10 +1,7 @@
 
 
 
-
-
-#### <font color='#00274C'> Author:  Tom Bresee </font>
-#### Category:  Examining something new to the industry
+#####  <font color='#00274C'> Author:  Tom Bresee </font>
 
 <br>
 <br>
