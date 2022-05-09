@@ -7,18 +7,16 @@
   </head>
 
   <body>
-    <p>Welcome. This is a simple pyscript example. We will print out some time values.</p>
+    <p><br>Welcome. This is a simple pyscript example. We will print out some time values.<br></p>
 
     <py-script>
-print('Here we go:\n')
-
 from datetime import date, datetime
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
-print("  Current Time:", current_time)
+print("\nThe current time:", current_time)
 
 today = date.today()
-print("  Today's date:", today)
+print("\nToday's current date:", today)
     </py-script>
   
   </body>
