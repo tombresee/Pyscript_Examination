@@ -1,0 +1,62 @@
+<html><head>
+    <title>Bokeh Example</title>
+    <meta charset="iso-8859-1">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.4.2.min.js"></script>
+
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+    
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+
+
+    </head>
+    <body>
+        <py-env>
+- bokeh
+- numpy
+        </py-env>
+        <h1>Bokeh Example</h1>
+        <div id="myplot"></div>
+
+    <py-script id="main">
+import json
+import pyodide
+
+from js import Bokeh, console, JSON
+
+from bokeh.embed import json_item
+from bokeh.resources import CDN
+from bokeh.plotting import figure, show
+from bokeh.sampledata.penguins import data
+from bokeh.transform import factor_cmap, factor_mark
+
+SPECIES = sorted(data.species.unique())
+MARKERS = ['hex', 'circle_x', 'triangle']
+
+p = figure(title = "Penguin size", background_fill_color="#fafafa")
+p.xaxis.axis_label = 'Flipper Length (mm)'
+p.yaxis.axis_label = 'Body Mass (g)'
+p.scatter("flipper_length_mm", "body_mass_g", source=data,
+          legend_group="species", fill_alpha=0.4, size=12,
+          marker=factor_mark('species', MARKERS, SPECIES),
+          color=factor_cmap('species', 'Category10_3', SPECIES))
+p.legend.location = "top_left"
+p.legend.title = "Species"
+
+p_json = json.dumps(json_item(p, "myplot"))
+Bokeh.embed.embed_item(JSON.parse(p_json))
+    </py-script>
+
+</body>
+</html>
+
+
+
