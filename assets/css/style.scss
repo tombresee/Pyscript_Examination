@@ -2,6 +2,30 @@
 ---
 
 @import "{{ site.theme }}";
+
+code {
+    color: #252525;
+    font-size: 11px;
+    padding: 1px 7px;
+    border-radius: 6px;
+    background-color: #ff8c00aa;
+    font-weight: bold;
+    display: inline-block;
+    margin: 1px;
+}
+
+
+a {
+    color: orange;
+}
+
+
+h4 {
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+
 .page-header {background: #191c20;}
 .inner{ max-width:850px;}
 .body {font-size: 25px;}
