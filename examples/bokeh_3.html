@@ -23,7 +23,7 @@
          - bokeh
          - numpy
          - pandas 
-         
+
         </py-env>
         <h1>Bokeh Example</h1>
         <div id="myplot"></div>
@@ -31,7 +31,7 @@
     <py-script id="main">
 import json
 import pyodide
-
+import pandas as pd
 from js import Bokeh, console, JSON
 
 from bokeh.embed import json_item
@@ -41,6 +41,7 @@ from bokeh.sampledata.penguins import data
 from bokeh.transform import factor_cmap, factor_mark
 
 SPECIES = sorted(data.species.unique())
+
 MARKERS = ['hex', 'circle_x', 'triangle']
 
 p = figure(title = "Penguin size", background_fill_color="#fafafa")
