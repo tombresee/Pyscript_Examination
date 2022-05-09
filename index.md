@@ -22,10 +22,9 @@ It was built in a very unusual manner...
 <p align="center"><img src='https://raw.githubusercontent.com/pyscript/pyscript/main/pyscriptjs/examples/logo.png' alt='py.png' width="200"></p>
 
 
-
 <br>
 
-### 1. &ensp; What is Pyscript ? 
+## 1. &ensp; What is Pyscript ? 
 
 
 PyScript does **not** require any development environment other than a web browser (be safe and use Chrome). It allows writing webesites in python.  
@@ -42,7 +41,7 @@ PyScript does **not** require any development environment other than a web brows
 
 <br>
 
-### 2. &ensp;  Cut to the chase and get to it...
+## 2. &ensp;  Cut to the chase and get to it...
 
 Ok, it's very simple. 
 
@@ -123,7 +122,7 @@ You see how I left-aligned all the python code ?  It's the safe way of making su
 
 <br>
 
-### 3. &ensp; A More Complicated Example
+## 3. &ensp; A More Complicated Example
 
 
 Plotting charts is going to be a big thing to leverage, let's show how to do it... 
@@ -138,8 +137,10 @@ Plotting charts is going to be a big thing to leverage, let's show how to do it.
       <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 
       <py-env>  
-        - numpy   
+        - numpy  
+        - pandas 
         - matplotlib
+        - scikit-learn 
       </py-env>
     
     </head>
@@ -198,7 +199,7 @@ It's fine, just reference it:</p>
 
 <br>
 
-### 5. &ensp;  How do I know if my particular python library is supported ???
+## 5. &ensp;  How do I know if my particular python library is supported ???
 
 If you make the [list](https://github.com/pyodide/pyodide/tree/main/packages), you are supported. 
 
