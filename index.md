@@ -1,11 +1,13 @@
 
 
+<py-script src="/python_example.py"> </py-script>
+
+
 
 #### <font color='#00274C'> Author:  &ensp; Tom Bresee </font>
 
 <br>
 <br>
-
 
 
 
@@ -192,13 +194,24 @@ as hosted as an example at this live [website](https://www.tombresee.com/Pyscrip
  </py-env>
 ```
 
-
 <p>Don't want to write all your python code directly into the html file ? 
 It's fine, just reference it:</p>
 
 
 ```<py-script> src="/toms_python_file.py"> </py-script>```
 
+
+<p>It turns out you can also do something like this:</p>
+
+```
+  <div class="container-md" id="test-plot"></div>
+  
+  <py-script>
+  ... 
+  pyscript.write('test-plot',fig)
+
+  </py-script>
+```
 
 <br>
 <br>
