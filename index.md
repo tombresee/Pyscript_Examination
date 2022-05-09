@@ -74,8 +74,9 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 
 1. Import the appropriate pyscript files to your html page with: 
   - `<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />`
-  - `<script defer src="https://pyscript.net/alpha/pyscript.js"></script>`
-   Now you can use PyScript components in your html page
+  - `<script defer src="https://pyscript.net/alpha/pyscript.js"></script>` 
+
+  Now you can use PyScript components in your html page
 
 2. Just write your code as if you were in any other IDE, making sure it is between the `<py-script>` tags.  These tags defined the python code that is executable within the web page. 
 
