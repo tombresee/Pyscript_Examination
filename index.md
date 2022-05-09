@@ -1,6 +1,6 @@
 
 
-<py-script src="/python_example.py"> </py-script>
+
 
 
 
@@ -197,11 +197,11 @@ as hosted as an example at this live [website](https://www.tombresee.com/Pyscrip
 <p>Don't want to write all your python code directly into the html file ? 
 It's fine, just reference it:</p>
 
-
 ```<py-script> src="/toms_python_file.py"> </py-script>```
 
+<br>
 
-<p>It turns out you can also do something like this:</p>
+<p>It turns out you can also do something like this for plotting matplotlib charts:</p>
 
 ```
   <div class="container-md" id="test-plot"></div>
@@ -218,7 +218,6 @@ It's fine, just reference it:</p>
 
 
 
-
 ### <font color='#00274C'>How do I know if my particular python library is supported ???</font>
 
 If you make the [list](https://github.com/pyodide/pyodide/tree/main/packages), you are supported. 
@@ -229,6 +228,115 @@ The link is technically the folder that contains the list of packages built in *
 
 <br>
 <br>
+
+
+
+
+
+
+### <font color='#00274C'>Bokeh</font>
+
+Plotting charts is going to be a big thing to leverage, let's show how to do it... 
+
+<br>
+
+
+```
+<html><head>
+    <title>Bokeh Example</title>
+    <meta charset="iso-8859-1">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-gl-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.4.2.min.js"></script>
+
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+    
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    </head>
+    <body>
+        <py-env>
+         - bokeh
+         - numpy
+         - pandas 
+
+        </py-env>
+        <h1>Bokeh Example</h1>
+        <div id="myplot"></div>
+
+    <py-script id="main">
+import json
+import pyodide
+import pandas as pd
+from js import Bokeh, console, JSON
+
+from bokeh.embed import json_item
+from bokeh.resources import CDN
+from bokeh.plotting import figure, show
+from bokeh.sampledata.penguins import data
+from bokeh.transform import factor_cmap, factor_mark
+
+SPECIES = sorted(data.species.unique())
+
+MARKERS = ['hex', 'circle_x', 'triangle']
+
+p = figure(title = "Penguin size", background_fill_color="#fafafa")
+p.xaxis.axis_label = 'Flipper Length (mm)'
+p.yaxis.axis_label = 'Body Mass (g)'
+p.scatter("flipper_length_mm", "body_mass_g", source=data,
+          legend_group="species", fill_alpha=0.4, size=12,
+          marker=factor_mark('species', MARKERS, SPECIES),
+          color=factor_cmap('species', 'Category10_3', SPECIES))
+p.legend.location = "top_left"
+p.legend.title = "Species"
+
+p_json = json.dumps(json_item(p, "myplot"))
+Bokeh.embed.embed_item(JSON.parse(p_json))
+    </py-script>
+
+</body>
+</html>
+```
+
+
+<p> This was a bit trickier. Bokeh can also supply JSON data that **BokehJS** can use to render a standalone Bokeh document in a specified `div`. 
+The json_item() function accepts a Bokeh model (for example, a plot) and an optional ID of the target `<div>`.</p>
+This [link](http://docs.bokeh.org/en/latest/docs/user_guide/embed.html) helped explain the details. 
+
+
+```
+item_text = json.dumps(json_item(p, "myplot"))
+
+The embed_item() function can then use this output on a web page:
+item = JSON.parse(item_text);
+Bokeh.embed.embed_item(item);
+This renders the plot in the <div> with the ID “myplot”.
+
+
+
+
+#  You can also omit the target ID when calling json_item():
+p = figure()
+p.circle(x, y)
+item_text = json.dumps(json_item(p)) # no target ID given
+
+#  You can then specify the ID in JavaScript:
+item = JSON.parse(item_text);
+Bokeh.embed.embed_item(item, "myplot");
+```
+
+
+
+<br><br>
+
+
+
 
 
 
