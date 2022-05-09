@@ -2,6 +2,13 @@
 
 https://github.com/pyscript/pyscript/blob/main/GETTING-STARTED.md
 
+<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+https://engrmuhammadusman108.medium.com/pyscript-way-to-run-python-in-web-ffa320c29cc0
+
+
+
 
 I want you to start by clicking [this link](https://pyscript.net/examples/panel_stream.html).  
 
@@ -143,7 +150,6 @@ Plotting charts is going to be a big thing to leverage, let's show how to do it.
 
     <div id="plot"></div>
     
-    <!-- Write your comments here -->
     <py-script output="plot">   
 
 # importing my libraries 
