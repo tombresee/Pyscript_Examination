@@ -117,10 +117,6 @@ Here is what the HTML output will look like:
 as hosted as an example at this live [website](https://www.tombresee.com/Pyscript_Examination/examples/time)
 
 <br>
-
-You see how I left-aligned all the python code ?  It's the safe way of making sure it all works correctly...
-
-<br>
 <br>
 
 
