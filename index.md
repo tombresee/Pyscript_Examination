@@ -83,28 +83,44 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 ```
 <html>
   <head>
+    <meta charset="utf-8" />
 
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />   <--- insert this 
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>       <--- insert this 
 
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
-    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-
-  
   </head>
-  <body> 
+
+  <body>
+    <p><br>Welcome. This is a simple pyscript example. We will print out some time values.<br><br></p>
 
 
-  <py-script>  
-# Tom is inserting his standard python code within these new <py-script> html TAGs: 
-print('Tom is cool.') 
-print('If you see this output, it means you did everything right...')
-# Tom is done pasting in his python code...
-   </py-script> 
+    <py-script>         <--- write your python code here !  
 
+from datetime import date, datetime
+now = datetime.now()
+current_time = now.strftime("%H:%M:%S")
+print("\nThe current time:", current_time)
 
-</body>
+today = date.today()
+print("\nToday's current date:", today)
+    
+    </py-script>       <--- end of python code  
+  
+
+  </body>
 </html>
 ```
 
+<br>
+
+Here is what the output will look like:
+<p align="center"><img src='https://raw.githubusercontent.com/tombresee/Pyscript_Examination/main/examples/time.png' alt='py.png' width="600"></p>
+
+<br>
+
+as hosted as an example [here](https://www.tombresee.com/Pyscript_Examination/examples/time)
+
+<br>
 
 You see how I left-aligned all the python code ?  It's the safe way of making sure it all works correctly...
 
