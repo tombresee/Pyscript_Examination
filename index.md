@@ -42,21 +42,6 @@ PyScript does **not** require any development environment other than a web brows
 <br>
 <br>
 
-| No | Title               | Type                       |
-|----|---------------------|----------------------------|
-| 1  | month               | Datetime (Month) "YYYY-MM" |
-| 2  | town                | Text (General)             |
-| 3  | flat_type           | Text (General)             |
-| 4  | block               | Text (General)             |
-| 5  | street_name         | Text (General)             |
-| 6  | storey_range        | Text (General)             |
-| 7  | floor_area_sqm      | Numeric (General)          |
-| 8  | flat_model          | Text (General)             |
-| 9  | lease_commence_date | Datetime (Year) "YYYY-MM"  |
-| 10 | remaining_lease     | Text (General)             |
-| 11 | resale_price        | Numeric (General)          |
-
-
 
 
 ### <font color='#00274C'>Cut to the chase and get to it...</font>
@@ -102,21 +87,22 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 <html>
   <head>
 
+
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
-  
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
   
   </head>
   <body> 
-  
-  <py-script>  
 
+
+  <py-script>  
 # Tom is inserting his standard python code within these new <py-script> html TAGs: 
 print('Tom is cool.') 
 print('If you see this output, it means you did everything right...')
 # Tom is done pasting in his python code...
- 
    </py-script> 
+
 
 </body>
 </html>
