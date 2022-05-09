@@ -112,8 +112,10 @@ print("\nToday's current date:", today)
 
 <br>
 
-Just like that, you have built your first pyscript example.  It will look like [this](https://www.tombresee.com/Pyscript_Examination/examples/time)
+Just like that, you have built your first pyscript example.  I have hosted this example [here](https://www.tombresee.com/Pyscript_Examination/examples/time). 
 
+It looks like this:
+<p align="center"><img src='https://raw.githubusercontent.com/tombresee/Pyscript_Examination/main/examples/time.png' alt='py.png' width="100"></p>
 
 You see how I left-aligned all the python code ?  It's the safe way of making sure it all works correctly...
 
