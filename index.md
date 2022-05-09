@@ -1,6 +1,8 @@
 
 
 
+
+
 #####  <font color='#00274C'> Author:  Tom Bresee </font>
 
 <br>
@@ -41,6 +43,7 @@ PyScript does **not** require any development environment other than a web brows
 
 
 
+
 ### <font color='#00274C'>Cut to the chase and get to it...</font>
 
 Ok, it's very simple. 
@@ -63,9 +66,7 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 | `<py-script>`   | Indicates to HTML to to execute the python code  | 
 | `<py-env>` | Indicates to HTML what your python library dependencies are (if you don't need any python libraries, it's blank). This component defines the Python packages needed to run your Python code...  |
 
-
 <br>
-
 
 **The Process:**
 
