@@ -128,6 +128,7 @@ Plotting charts is going to be a big thing to leverage, let's show how to do it.
 ```python
 <html>
     <head>
+
       <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
       <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 
@@ -169,11 +170,12 @@ fig
 </html>
 ```
 
+
 <p> The py-env tag is used to define our Python environment. Example of loading python packages into our environment: </p>
 
 
 ```
-<py-env> 
+ <py-env> 
   - numpy   
   - pandas 
   - matplotlib
