@@ -12,14 +12,16 @@
   <br>
   Welcome. 
   <br>
-  This is the current date and time, using python commands:<br>
+  This is the current date and time, using python commands:<br><br>
   
     <py-script>
-print('---')
 from datetime import datetime
+from datetime import date
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
 print("Current Time =", current_time)
+today = date.today()
+print("Today's date = ", today)
     </py-script>
   
   </body>
