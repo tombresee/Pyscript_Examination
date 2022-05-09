@@ -61,7 +61,7 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 **Your new HTML tag building blocks:**
 
 
-| HTML Tag | Purpose |
+| HTML Tag Element | Purpose |
 |:-|:-|
 | `<py-script>`   | Indicates to HTML to to execute the python code  | 
 | `<py-env>` | Indicates to HTML what your python library dependencies are (if you don't need any python libraries, it's blank). This component defines the Python packages needed to run your Python code...  |
@@ -83,7 +83,7 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 <br>
 
 
-```python
+```
 <html>
   <head>
 
@@ -125,7 +125,7 @@ Plotting charts is going to be a big thing to leverage, let's show how to do it.
 <br>
 
 
-```python
+```
 <html>
     <head>
 
