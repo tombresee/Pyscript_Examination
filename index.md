@@ -114,7 +114,7 @@ print("\nToday's current date:", today)
 Here is what the HTML output will look like:
 <p align="center"><img src='https://raw.githubusercontent.com/tombresee/Pyscript_Examination/main/examples/time.png' alt='py.png' width="600"></p>
 
-as hosted as an example at this live [website](https://www.tombresee.com/Pyscript_Examination/examples/time)
+as hosted as an example at this live [website](https://www.tombresee.com/Pyscript_Examination/examples/time). 
 
 <br>
 <br>
@@ -132,48 +132,52 @@ Plotting charts is going to be a big thing to leverage, let's show how to do it.
 
 ```
 <html>
-    <head>
+  <head>
+    <title>Matplotlib</title>
+    <meta charset="utf-8" />
 
-      <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-      <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 
-      <py-env>  
-        - numpy  
-        - pandas 
-        - matplotlib
-        - scikit-learn 
-      </py-env>
     
-    </head>
+    <py-env>         <--- insert python libraries needed...
+      - numpy
+      - matplotlib
+    </py-env>
+
+  </head>
 
   <body>
-    
-    <p> Plotting random numbers </p>
+    <p><br>Welcome. This is a simple Matplotlib chart.<br><br></p>
+      
+    <div id="mpl"></div>
 
-    <div id="plot"></div>
-    
-    <py-script output="plot">   
-
-# importing my libraries 
+    <py-script output='mpl'>
 import matplotlib.pyplot as plt
 import numpy as np
 
-# defining some random variables 
-x = np.random.randn(1000)
-y = np.random.randn(1000)
-
+# Data for plotting
+t = np.arange(0.0, 2.0, 0.01)
+s = 1 + np.sin(2 * np.pi * t)
 fig, ax = plt.subplots()
-
-ax.scatter(x, y)
-
-fig
-
+ax.plot(t, s)
+ax.set(xlabel='time (s)', ylabel='voltage (mV)',
+       title='About as simple as it gets, folks')
+ax.grid()
+fig 
     </py-script>
-
-
+  
   </body>
 </html>
 ```
+
+
+<br>
+
+Here is what the HTML output will look like:
+<p align="center"><img src='https://raw.githubusercontent.com/tombresee/Pyscript_Examination/main/examples/matplotlib.png' alt='py.png' width="600"></p>
+
+as hosted as an example at this live [website](https://www.tombresee.com/Pyscript_Examination/examples/simple_plot). 
 
 
 <p> The py-env tag is used to define our Python environment. Example of loading python packages into our environment: </p>
