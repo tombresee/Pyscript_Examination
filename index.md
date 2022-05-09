@@ -1,9 +1,7 @@
 
 
 
-
-
-#####  <font color='#00274C'> Author:  Tom Bresee </font>
+#### <font color='#00274C'> Author:  &ensp; Tom Bresee </font>
 
 <br>
 <br>
@@ -43,7 +41,6 @@ PyScript does **not** require any development environment other than a web brows
 
 
 
-
 ### <font color='#00274C'>Cut to the chase and get to it...</font>
 
 Ok, it's very simple. 
@@ -66,15 +63,16 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 | `<py-script>`   | Indicates to HTML to to execute the python code  | 
 | `<py-env>` | Indicates to HTML what your python library dependencies are (if you don't need any python libraries, it's blank). This component defines the Python packages needed to run your Python code...  |
 
+
 <br>
+
 
 **The Process:**
 
 1. Import the appropriate pyscript files to your html page with: 
   - `<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />`
-  - `<script defer src="https://pyscript.net/alpha/pyscript.js"></script>` 
-
-  Now you can use PyScript components in your html page
+  - `<script defer src="https://pyscript.net/alpha/pyscript.js"></script>`
+   Now you can use PyScript components in your html page
 
 2. Just write your code as if you were in any other IDE, making sure it is between the `<py-script>` tags.  These tags defined the python code that is executable within the web page. 
 
@@ -85,43 +83,30 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 ```
 <html>
   <head>
-  
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" /> <--- insert this 
-    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>     <--- insert this
+
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css"/>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
   
   </head>
+  <body> 
 
-  <body>
-    <p><br>Welcome. This is a simple pyscript example. We will print out some time values.<br><br></p>
 
-    <py-script>      <--- write your python starting here ! 
+  <py-script>  
+# Tom is inserting his standard python code within these new <py-script> html TAGs: 
+print('Tom is cool.') 
+print('If you see this output, it means you did everything right...')
+# Tom is done pasting in his python code...
+   </py-script> 
 
-from datetime import date, datetime
-now = datetime.now()
-current_time = now.strftime("%H:%M:%S")
-print("\nThe current time:", current_time)
 
-today = date.today()
-print("\nToday's current date:", today)
-    
-    </py-script>     <--- python code done...
-  
-  </body>
+</body>
 </html>
 ```
 
 
-<br>
-
-Just like that, you have built your first pyscript example.  I have hosted this example [here](https://www.tombresee.com/Pyscript_Examination/examples/time). 
-
-It looks like this:
-<p align="center"><img src='https://raw.githubusercontent.com/tombresee/Pyscript_Examination/main/examples/time.png' alt='py.png' width="600"></p>
-
-
-<br>
 You see how I left-aligned all the python code ?  It's the safe way of making sure it all works correctly...
-
 
 <br>
 <br>
