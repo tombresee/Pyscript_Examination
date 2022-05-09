@@ -9,10 +9,9 @@
     <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.2.min.js"></script>
     <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-2.4.2.min.js"></script>
 
-    <script type="text/javascript">Bokeh.set_log_level("info"); </script>
-
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
 
     </head>
     <body>
@@ -21,7 +20,7 @@
             - numpy
         </py-env>
 
-    <h1>Bokeh Exampl</h1>
+    <h1>Bokeh Example</h1>
     
     <div id="myplot"></div>
 
@@ -73,7 +72,9 @@ $$
 \qquad B_\nu(\nu, T) = \frac{2h\nu^3}{c^2} \frac{1}{\exp(h\nu/kT)-1}\ .
 $$
 """)
-show(column(p, div), 'myplot')
+
+column(p, div)
+
     </py-script>
 
 </body>
