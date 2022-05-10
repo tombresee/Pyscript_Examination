@@ -1,3 +1,5 @@
+<!-- Magic is here! -->
+
 
 ### <font color='#00274C'>Background</font>
 
@@ -10,6 +12,8 @@ What do you think of it ?
 It was built in a very unusual manner...
 
 <p align="center"><img src='https://raw.githubusercontent.com/pyscript/pyscript/main/pyscriptjs/examples/logo.png' alt='py.png' width="100"></p>
+
+On April 30, 2022 Anaconda announced PyScript at PyCon 2022.
 
 
 <br><br>
@@ -54,6 +58,10 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 | `<py-script>`   | Indicates to HTML to to execute the python code  | 
 | `<py-env>` | Indicates to HTML what your python library dependencies are (if you don't need any python libraries, it's blank). This component defines the Python packages needed to run your Python code...  |
 
+
+You don't need to *install* anything!   All you need to do is add two specific resources to our HTML head (a JavaScript file, and a CSS).   Done. 
+
+
 Pyscript defines the tag `<py-env>` which defines the Python packages your program requires. IF you refer to a numpy command for instance without refering to it from py-env, it will not work, you will get a error similiar to something like this:  ```ModuleNotFoundError: No module named 'altair'```
 
 <br>
@@ -75,8 +83,9 @@ Pyscript defines the tag `<py-env>` which defines the Python packages your progr
   <head>
     <meta charset="utf-8" />
 
-    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />   <--- insert this 
-    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>       <--- insert this 
+    <!--  Insert these two lines !  -->
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />   
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>       
 
   </head>
 
@@ -229,8 +238,6 @@ The link is technically the folder that contains the list of packages built in *
 
 
 
-
-
 ### <font color='#00274C'>Bokeh</font>
 
 Plotting charts is going to be a big thing to leverage, let's show how to do it... 
@@ -301,10 +308,14 @@ Bokeh.embed.embed_item(JSON.parse(p_json))
 </html>
 ```
 
+<br>
+
 
 <p> This was a bit trickier. Bokeh can also supply JSON data that **BokehJS** can use to render a standalone Bokeh document in a specified `div`. 
-The json_item() function accepts a Bokeh model (for example, a plot) and an optional ID of the target `<div>`.</p>
+The json_item() function accepts a Bokeh model (for example, a plot) and an optional ID of the target div.</p>
+
 This [link](http://docs.bokeh.org/en/latest/docs/user_guide/embed.html) helped explain the details. 
+
 
 
 ```
@@ -328,7 +339,7 @@ item = JSON.parse(item_text);
 Bokeh.embed.embed_item(item, "myplot");
 ```
 
-
+<br><br>
 
 
 
@@ -416,7 +427,7 @@ alt.Chart(source).transform_filter(
 - If you try to load an external python file, it has to be running from html server ? 
 - You can import altair and for instance vega_datasets, and thus you will have access to source example data. 
 - from pyodide.http import pyfetch. (I use that import to provide a replacement for requests)
-- 
+- Thank you Anaconda !!!! 
 
 <br>
 <br>
