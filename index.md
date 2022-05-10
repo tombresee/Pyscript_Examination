@@ -356,11 +356,53 @@ Plotting charts is going to be a big thing to leverage, let's show how to do it.
       altair code 
       ...
       </py-script>
-      
+
 ```
 
 
-<p> Altair behaves pretty well.  Make sure you have altair in the py-env html tag, build a div element with an id, and refer to that id as the output in the py-script tag... pretty simples. 
+
+```
+<html>
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>    <--- need altair, pandas, vega_datasets for this example... 
+      - altair
+      - pandas
+      - vega_datasets
+    </py-env>
+    </head>
+    
+    <body>
+      <div id="altair" style="width: 100%; height: 100%"></div>   <--- define a div 
+      
+
+      <py-script output="altair">      <--- note output is the altair div above... 
+
+# Paste this example in line for line:
+# https://altair-viz.github.io/gallery/trellis_area_sort_array.html
+# i.e. the below: 
+import altair as alt
+from vega_datasets import data
+source = data.stocks()
+alt.Chart(source).transform_filter(
+    alt.datum.symbol != 'GOOG'
+).mark_area().encode(
+    x='date:T',
+    y='price:Q',
+    color='symbol:N',
+    row=alt.Row('symbol:N', sort=['MSFT', 'AAPL', 'IBM', 'AMZN'])
+).properties(height=50, width=400)
+
+      </py-script>
+
+    </body>
+</html>
+```
+
+
+
+<p> Altair behaves pretty well.  Make sure you have altair in the py-env html tag, build a div element with an id, and refer to that id as the output in the py-script tag... pretty simples. So in theory, you just go to [Altair gallery here](https://altair-viz.github.io/gallery/index.html), paste in some code, and it will work out of the box... 
 
 
 
@@ -370,8 +412,10 @@ Plotting charts is going to be a big thing to leverage, let's show how to do it.
 
 
 ### <font color='#00274C'>Current Limitations</font>
+- At this time, Pyscript is in **alpha**.  Give it time! It will be improved, more will be added.  Get familiar with it... 
 - If you try to load an external python file, it has to be running from html server ? 
 - You can import altair and for instance vega_datasets, and thus you will have access to source example data. 
+- from pyodide.http import pyfetch. (I use that import to provide a replacement for requests)
 - 
 
 <br>
