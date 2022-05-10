@@ -3,7 +3,7 @@
 
 I want you to start by clicking [this link](https://pyscript.net/examples/panel_stream.html).  
 
-Wait a few seconds.  
+It's going to take a bit to load, wait for it. 
 
 What do you think of it ? 
 
@@ -11,20 +11,21 @@ It was built in a very unusual manner...
 
 <p align="center"><img src='https://raw.githubusercontent.com/pyscript/pyscript/main/pyscriptjs/examples/logo.png' alt='py.png' width="100"></p>
 
+
 <br><br>
-
-
 
 
 
 ### <font color='#00274C'>What is Pyscript ?</font>
 
-PyScript does **not** require any development environment other than a web browser (be safe and use Chrome). It allows writing websites in python.  
+You can now use Pyscript to run Python code IN the web browser.  PyScript does **not** require any development environment other than a web browser (Chrome is recommended for stability).  This has enormous potential for AI, ML, Data Scientists, and even regular Python developers. The possibility of writing both frontend and backend code in Python is intriguing...
 
+Some reference links below:
 * <https://pyscript.net/>
 * <https://github.com/pyscript>
 * <https://github.com/pyscript/pyscript/blob/main/GETTING-STARTED.md>
 * [Original Anaconda Blog](https://www.anaconda.com/blog/pyscript-python-in-the-browser)
+
 
 <br>
 <br>
@@ -53,6 +54,7 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 | `<py-script>`   | Indicates to HTML to to execute the python code  | 
 | `<py-env>` | Indicates to HTML what your python library dependencies are (if you don't need any python libraries, it's blank). This component defines the Python packages needed to run your Python code...  |
 
+Pyscript defines the tag `<py-env>` which defines the Python packages your program requires. IF you refer to a numpy command for instance without refering to it from py-env, it will not work, you will get a error similiar to something like this:  ```ModuleNotFoundError: No module named 'altair'```
 
 <br>
 
@@ -62,7 +64,7 @@ An HTML tag is a piece of markup language used to indicate the beginning and end
 1. Import the appropriate pyscript files to your html page with: 
   - `<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />`
   - `<script defer src="https://pyscript.net/alpha/pyscript.js"></script>`
-   Now you can use PyScript components in your html page
+   Now you can use PyScript components in your html page.  You will always include these two tags in the HTML head. 
 
 2. Just write your code as if you were in any other IDE, making sure it is between the `<py-script>` tags.  These tags defined the python code that is executable within the web page. 
 
@@ -105,6 +107,9 @@ Here is what the HTML output will look like:
 <p align="center"><img src='https://raw.githubusercontent.com/tombresee/Pyscript_Examination/main/examples/time.png' alt='py.png' width="600"></p>
 
 as hosted as an example at this live [website](https://www.tombresee.com/Pyscript_Examination/examples/time). 
+
+
+Note:  You must correctly format the Python code just like a normal .py file. Indentation will matter !  I just left align the python code to keep it simple. 
 
 <br>
 <br>
@@ -182,10 +187,13 @@ as hosted as an example at this live [website](https://www.tombresee.com/Pyscrip
  </py-env>
 ```
 
-<p>Don't want to write all your python code directly into the html file ? 
-It's fine, just reference it:</p>
+<p>Don't want to write all your python code directly into the actual html file ? 
+It's fine, just reference it like this:</p>
 
 ```<py-script> src="/toms_python_file.py"> </py-script>```
+
+This loads python from that separate file...
+
 
 <br>
 
@@ -200,6 +208,7 @@ It's fine, just reference it:</p>
 
   </py-script>
 ```
+
 
 <br>
 <br>
@@ -321,18 +330,49 @@ Bokeh.embed.embed_item(item, "myplot");
 
 
 
-<br><br>
 
 
 
 
+### <font color='#00274C'>Altair</font>
+
+Plotting charts is going to be a big thing to leverage, let's show how to do it... 
+
+<br>
+
+```
+    <py-env>
+      - altair
+      - pandas
+      - vega_datasets
+    </py-env>
+
+    <body>
+      <div id="altair-output" style="width: 100%; height: 100%"></div>
+      
+
+      <py-script output="altair-output">   <--- point output plot to the above div id 
+      ...
+      altair code 
+      ...
+      </py-script>
+      
+```
+
+
+<p> Altair behaves pretty well.  Make sure you have altair in the py-env html tag, build a div element with an id, and refer to that id as the output in the py-script tag... pretty simples. 
 
 
 
-### <font color='#00274C'>Enhanced Visualization Expectations:</font>
- Final presentation will include a fully interactive view of all NFL players by weight, height, offense/defense, college attended, BMI, football position, including deeper views of the players via html link to their official NFL profile. This visualization will also allow a deeper view into player positional coordinates. 
-   - Position coordinates is a relatively new technology, and an exciting element to analyze
-   - Examples:  [Viz1](https://raw.githubusercontent.com/tombresee/NFL-Big-Data-Bowl-2021/main/ENTER/images/tampa_bay_passes_all_season.svg), [Viz2](https://raw.githubusercontent.com/tombresee/NFL-Big-Data-Bowl-2021/main/ENTER/images/avg_passing_yds_per_game_by_team.svg), [Viz3](https://raw.githubusercontent.com/tombresee/NFL-Big-Data-Bowl-2021/main/ENTER/images/player_weight_distribution.svg), [Viz4](https://raw.githubusercontent.com/tombresee/NFL-Big-Data-Bowl-2021/main/ENTER/images/orangeonblue2_b.svg), [Viz5](https://raw.githubusercontent.com/tombresee/NFL-Big-Data-Bowl-2021/main/ENTER/images/spheroid_prolate.svg), [Viz6](https://raw.githubusercontent.com/tombresee/NFL-Big-Data-Bowl-2021/main/ENTER/images/frontend.png)
+
+<br>
+<br>
+
+
+### <font color='#00274C'>Current Limitations</font>
+- If you try to load an external python file, it has to be running from html server ? 
+- You can import altair and for instance vega_datasets, and thus you will have access to source example data. 
+- 
 
 <br>
 <br>
