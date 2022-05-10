@@ -1,16 +1,4 @@
 
-
-
-
-
-
-#### <font color='#00274C'> Author:  &ensp; Tom Bresee </font>
-
-<br>
-<br>
-
-
-
 ### <font color='#00274C'>Background</font>
 
 I want you to start by clicking [this link](https://pyscript.net/examples/panel_stream.html).  
@@ -23,8 +11,8 @@ It was built in a very unusual manner...
 
 <p align="center"><img src='https://raw.githubusercontent.com/pyscript/pyscript/main/pyscriptjs/examples/logo.png' alt='py.png' width="100"></p>
 
-<br>
-<br>
+<br><br>
+
 
 
 
